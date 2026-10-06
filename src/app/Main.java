@@ -1,9 +1,9 @@
 package app;
 
 import UI.GameUi;
+import UI.GraphicUI;
 import controller.BattleController;
 import interfaces.Battle;
-import interfaces.Unit;
 import simpleBattle.simpleBattleFactory;
 
 public class Main {
@@ -15,7 +15,8 @@ public class Main {
         BattleController controller = new BattleController(battle);
 
         GameUi game = new GameUi(controller);
-
+        //GraphicUI game = new GraphicUI(controller);
         game.start();
+
     }
     }
